@@ -13,10 +13,14 @@ Executes 30 rigorous scientific verification steps:
 """
 
 import os
+import sys
 import json
 import time
 import unittest
 import numpy as np
+
+# Ensure project root in sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from quantlens.models_cnn import CNNModelManager, TimeSeriesConv1D, CNN_FEATURE_CHANNELS, LOOKBACK_WINDOW
 from quantlens.xai_gradcam import GradCAMEngine
