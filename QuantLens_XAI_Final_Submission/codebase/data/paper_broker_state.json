@@ -1,0 +1,92 @@
+{
+  "initial_capital": 100000.0,
+  "cash": 75925.62,
+  "positions": {
+    "RELIANCE": {
+      "symbol": "RELIANCE",
+      "shares": 17,
+      "avg_price": 1415.43,
+      "current_price": 1500.75,
+      "unrealized_pnl": 1450.44,
+      "return_pct": 6.03,
+      "opened_at": "2026-07-30",
+      "entry_fee": 12.03,
+      "account_id": "default_paper_account"
+    }
+  },
+  "orders": [
+    {
+      "order_id": "ORD-759458",
+      "account_id": "default_paper_account",
+      "timestamp": "2026-11-01 02:19:19",
+      "symbol": "RELIANCE",
+      "side": "BUY",
+      "order_type": "market",
+      "quantity": 10,
+      "price": 1500.0,
+      "fill_price": 1500.75,
+      "gross_value": 15007.5,
+      "fee": 7.5,
+      "brokerage_fee": 7.5,
+      "status": "EXECUTED",
+      "strategy_id": null,
+      "rule_reason": "Manual Paper Trade",
+      "reason_code": "ENTRY_SIGNAL",
+      "idempotency_key": "RELIANCE_BUY_10_2026-11-01 02:19:19_ORD-759458"
+    },
+    {
+      "order_id": "ORD-759446",
+      "account_id": "default_paper_account",
+      "timestamp": "2026-07-30",
+      "symbol": "RELIANCE",
+      "side": "BUY",
+      "order_type": "market",
+      "quantity": 7,
+      "price": 1292.9000244140625,
+      "fill_price": 1293.55,
+      "gross_value": 9054.85,
+      "fee": 4.53,
+      "brokerage_fee": 4.53,
+      "status": "EXECUTED",
+      "strategy_id": "Final Polish Crossover Strategy",
+      "rule_reason": "Autopilot Entry: Bullish Golden Cross (EMA10 1279.0 > EMA30 1277.0) with RSI 50.0 < 65.0",
+      "reason_code": "ENTRY_EMA_CROSSOVER",
+      "idempotency_key": "RELIANCE_BUY_7_2026-07-30_ORD-759446"
+    }
+  ],
+  "trade_history": [],
+  "audit_log": [
+    {
+      "audit_id": "AUD-9459",
+      "account_id": "default_paper_account",
+      "timestamp": "2026-11-01 02:19:19",
+      "event_type": "ORDER_BUY_FILLED",
+      "details": "Bought 10 shares of RELIANCE @ \u20b91,500.75 (Total: \u20b915,015.00 with fee \u20b97.5)",
+      "rule_reason": "Manual / System Action",
+      "cash_after": 75925.62,
+      "portfolio_after": 101438.37
+    },
+    {
+      "audit_id": "AUD-0001",
+      "account_id": "default_paper_account",
+      "timestamp": "2026-11-01 02:19:19",
+      "event_type": "ACCOUNT_RESET",
+      "details": "Paper broker reset to initial virtual capital of \u20b9100,000.00 INR",
+      "rule_reason": "Manual / Demo Reset",
+      "cash_after": 100000.0,
+      "portfolio_after": 100000.0
+    },
+    {
+      "audit_id": "AUD-9448",
+      "account_id": "default_paper_account",
+      "timestamp": "2026-11-01 02:19:19",
+      "event_type": "ORDER_BUY_FILLED",
+      "details": "Bought 7 shares of RELIANCE @ \u20b91,293.55 (Total: \u20b99,059.38 with fee \u20b94.53)",
+      "rule_reason": "Autopilot Entry: Bullish Golden Cross (EMA10 1279.0 > EMA30 1277.0) with RSI 50.0 < 65.0",
+      "cash_after": 90940.62,
+      "portfolio_after": 99995.47
+    }
+  ],
+  "active_strategy": null,
+  "storage_backend": "MongoDB"
+}
